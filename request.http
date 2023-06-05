@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:3000/messages
+
+GET {{baseUrl}}
+
+### find one
+GET {{baseUrl}}/496
+
+### Default post message
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "content": "fake content"
+}
